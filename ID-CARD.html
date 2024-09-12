@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID CARD</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="id-card">
+        <div class="content">
+            <div class="profile-pic"></div>
+            <div class="info">
+                <h2>Muhammad Haikal</h2>
+                <h4>Frontend Devoloper</h4>
+                <p>Hallo Selamat Datang!!<br>
+                Apakah Ada yang Bisa Saya Bantu?</p>
+                <div class="tombol">
+                    <ul>
+                        <a href="devloper.html">HOME</a>
+                    </ul>
+                </div>
+                <div class="links">
+                    <a href="https://www.facebook.com/mhaikal.haikal.902/" target="_self">
+                        <i data-feather="facebook">
+
+                        </i>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i data-feather="youtube">
+
+                        </i>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i data-feather="twitter">
+                        </i>
+                    </a>
+                    <a href="https://www.instagram.com/hkl_rjr/" target="_self">
+                        <i data-feather="instagram">
+
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;600&display=swap');
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #1c1c1c;
+        font-family: 'poppins', sans-serif;
+        margin: 0 ;
+    }
+    .id-card {
+        width: 310px;
+        background-color: #1c1c1c;
+        border-radius: 10px;
+        box-shadow: 0 0 5px  rgba(89, 0, 255, 0.5), 0 0 5px rgba(71, 48, 48, 0.5);
+        overflow: hidden;
+        border: 2px solid transparent;
+        background-image: linear-gradient(#850606, #1c1c1c), linear-gradient(toright, #4c68d7, #6b5b95);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+    .id-card .content {
+        padding: 40px;
+        text-align: center;
+    }
+    .id-card .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-image: url('images/Haikal.jpg.jpeg');
+        background-size: cover;
+        background-position: center;
+        margin-left: 65px;
+        margin-bottom: 65px;
+        box-shadow: 0 0 10px rgba(255, 219, 219, 0.2), 0 0 20px rgba(17, 0, 253, 0.5), 0 0 30px rgba(255, 255, 255, 0.5);
+    }
+    .id-cardc .inf0 h2 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 2px;
+        color: #ffffff;
+        text-shadow: 0 0 10px rgba(76, 104, 215, 0.5) 0 0 20px rgba(107, 91, 149, 0.5);
+    }
+    .id-card .info h4 {
+        font-size: 18px;
+        margin-top: 2px;
+        color: #bdc3c7;
+    }
+    .id-card .info p {
+        font-size: 14px;
+        color: #bdc3c7;
+        margin-bottom: 30px;
+    }
+    .tombol {
+        text-align: justify;
+    }
+    .tombol ul {
+        position: relative;
+        padding: 8px 12px;
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-left: 80px;
+
+    }
+    .tombol ul a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    .tombol ul a:hover {
+        background: #6b5b95;
+        padding: 2px 5px;
+        border-radius: 20px;
+    }
+    .id-card .links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .id-card .links a {
+        color: #bdc3c7;
+        font-size: 18px;
+        transition: color 0.3s ease;
+        text-shadow: 0 0 10px rgba(76, 104, 215, 0.5) 0 0 20px rgba(107, 91, 149, 0.5);
+    }
+    .id-card .links a:hover {
+        color: #4c68d7;
+    }
+</style>
